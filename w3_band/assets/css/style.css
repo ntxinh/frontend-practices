@@ -1,105 +1,152 @@
 /* Reset CSS */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-family: Helvetica, Arial, sans-serif;
-  }
-  
-  /* 
-  1. Từ ngoài vào trong
-  2. Từ trên xuống dưới
-  3. Từ tổng quan đến chi tiết
-  */
-  
-  /*
-  1. Vị trí
-  2. Kích thước
-  3. Màu sắc
-  4. Kiểu dáng
-  */
-  
-  #main {
-  }
-  
-  #header {
-    height: 46px;
-    background-color: #000;
-  }
-  
-  #nav,
-  .subnav {
-    list-style-type: none;
-  }
-  
-  #nav > li {
-    display: inline-block;
-  }
-  
-  #nav li {
-    position: relative;
-  }
-  
-  #nav > li > a {
-    color: #fff;
-    text-transform: uppercase;
-  }
-  
-  #nav li a {
-    text-decoration: none;
-    line-height: 46px;
-    padding: 0 24px;
-    display: block;
-  }
-  
-  #nav li:hover .subnav {
-    display: block;
-  }
-  
-  #nav > li:hover > a,
-  #nav .subnav li:hover a {
-    color: #000;
-    background-color: #ccc;
-  }
-  
-  #nav .subnav {
-    display: none;
-    min-width: 160px;
-    top: 100%;
-    left: 0;
-    position: absolute;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-  
-  #nav .subnav a {
-    color: #000;
-    padding: 0 12px;
-    line-height: 38px;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  #nav .nav-arrow-down {
-    font-size: 14px;
-  }
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
 
-  #header .search-btn {
-    
-  }
-  
-  #nav li {
-  }
-  
-  #slider {
-    /* min-height: 500px;
-    background-color: #333; */
-  }
-  
-  #content {
-  }
-  
-  #footer {
-  }
-  
+/* 
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Từ tổng quan đến chi tiết
+*/
+
+/*
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng
+*/
+
+#main {
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 46px;
+  background-color: #000;
+  z-index: 1;
+}
+
+#nav {
+  display: inline-block;
+}
+
+#nav,
+.subnav {
+  list-style-type: none;
+}
+
+#nav > li {
+  display: inline-block;
+}
+
+#nav li {
+  position: relative;
+}
+
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#nav li a {
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+  display: block;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a {
+  color: #000;
+  background-color: #ccc;
+}
+
+#nav .subnav {
+  display: none;
+  min-width: 160px;
+  top: 100%;
+  left: 0;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+  color: #000;
+  padding: 0 12px;
+  line-height: 38px;
+}
+
+#nav .nav-arrow-down {
+  font-size: 14px;
+}
+
+#header .search-btn {
+  float: right;
+  padding: 0 21px;
+}
+
+#header .search-btn:hover {
+  cursor: pointer;
+  background-color: #f44336;
+}
+
+#header .search-icon {
+  color: #fff;
+  font-size: 20px;
+  line-height: 46px;
+}
+
+#nav li {
+}
+
+#slider {
+  position: relative;
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+  position: absolute;
+  bottom: 47px;
+  color: #fff;
+  /* Method 1: */
+  /* left: 50%;
+  transform: translateX(-50%); */
+  /* Method 2: */
+  width: 100%;
+  /* Method 3: */
+  /* right: 0;
+  left: 0; */
+  text-align: center;
+}
+
+#slider .text-heading {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#slider .text-description {
+  font-size: 15px;
+  margin-top: 25px;
+}
+
+#content {
+}
+
+#footer {
+}
