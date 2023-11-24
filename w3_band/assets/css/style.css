@@ -26,6 +26,10 @@ html {
   clear: both;
 }
 
+.text-white {
+  color: #fff !important;
+}
+
 #main {
 }
 
@@ -207,5 +211,15 @@ html {
   border-radius: 4px;
 }
 
+/* Tour section */
+.tour-section {
+  background-color: #000;
+}
+
+.tickets-list {
+  background-color: #fff;
+}
+
+/* Footer section */
 #footer {
 }
