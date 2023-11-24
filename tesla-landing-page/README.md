@@ -23,3 +23,6 @@ bun run build
 cd public
 python3 -m http.server 3000
 ```
+
+- https://www.tesla.com/
+- http://localhost:3000/
