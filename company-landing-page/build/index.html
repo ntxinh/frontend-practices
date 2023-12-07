@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en" class="sm:scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,46 +16,56 @@
     <link href="/build/css/style.css" rel="stylesheet" />
     <script src="js/main.js" defer></script>
   </head>
-  <body>
-    <div>
-      <header class="bg-pink-500">
-        <div
-          class="layout-container bg-green-500 flex justify-between items-center h-[60px]"
-        >
+  <body class="min-h-screen">
+    <header class="sticky top-0 z-10 bg-pink-500">
+      <div class="layout-container">
+        <!-- Desktop -->
+        <section class="mx-auto flex max-w-4xl items-center justify-between p-[9px] bg-green-500">
           <img class="block w-[190px]" src="/build/img/logo.svg" alt="Logo" />
-          <!-- <label for="">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label> -->
-          <nav class="w-[60%] hidden md:block">
-            <ul
-              class="flex justify-between uppercase font-semibold text-primary"
-            >
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Company</a></li>
-              <li><a href="#">Solutions</a></li>
-              <li><a href="#">Clients</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
+          <nav
+            class="hidden md:block space-x-2 uppercase font-semibold text-primary"
+            aria-label="main"
+          >
+            <a href="#" class="">About Us</a>
+            <a href="#" class="">Company</a>
+            <a href="#" class="">Solutions</a>
+            <a href="#" class="">Clients</a>
+            <a href="#" class="">Careers</a>
+            <a href="#" class="">Contact Us</a>
           </nav>
-        </div>
-      </header>
+        </section>
+        <!-- Mobile -->
+        <!-- <section
+          id="mobile-menu"
+          class=""
+        >
+          <nav
+            class=""
+            aria-label="mobile"
+          >
+            <a href="#" class="">About Us</a>
+            <a href="#" class="">Company</a>
+            <a href="#" class="">Solutions</a>
+            <a href="#" class="">Clients</a>
+            <a href="#" class="">Careers</a>
+            <a href="#" class="">Contact Us</a>
+          </nav>
+        </section> -->
+      </div>
+    </header>
 
-      <main>
-        <div>
-          <section></section>
-          <section></section>
-          <section></section>
-          <section></section>
-          <section></section>
-        </div>
-        <!-- Inview -->
+    <main>
+      <div>
         <section></section>
-      </main>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+      </div>
+      <!-- Inview -->
+      <section></section>
+    </main>
 
-      <footer></footer>
-    </div>
+    <footer></footer>
   </body>
 </html>
